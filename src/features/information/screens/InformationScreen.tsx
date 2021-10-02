@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
-import {View, Switch, StyleSheet, Text, Alert, Button, ScrollView, useColorScheme, TextComponent} from "react-native";
+import {ScrollView, StyleSheet, Text} from 'react-native';
 
 const InformationScreen = () => {
-    const [isEnabled, setIsEnabled] = useState(false);
-    const toggleSwitch = () => setIsEnabled(previouesState => !previouesState);
+  const [isEnabled, setIsEnabled] = useState(false);
+  const toggleSwitch = () => setIsEnabled(previouesState => !previouesState);
 
-    return (
-<ScrollView>
-        <Text style={styles.title}>
-            {`Podstawowe informacje o ochronie przeciw
+  return (
+    <ScrollView>
+      <Text style={styles.title}>
+        {`Podstawowe informacje o ochronie przeciw
         \nwirusowi SARS-CoV-2
         \n1. Aby zapobiec rozprzestrzenianiu się COVID-19:
         \n2. Utrzymuj bezpieczną odległość od innych osób (co najmniej 1 metr), nawet jeśli nie wydają się chore.
@@ -18,11 +18,9 @@ const InformationScreen = () => {
         \n6. Zaszczep się, gdy tylko będziesz mieć taką możliwość. Postępuj zgodnie z lokalnymi wytycznymi dotyczącymi szczepień.
         \n7. Gdy kaszlesz lub kichasz, zakrywaj nos i usta wewnętrzną stroną łokcia lub chusteczką.
         \n8. Jeśli źle się czujesz, zostań w domu.`}
-
-        </Text>
-
-</ScrollView>
-)
+      </Text>
+    </ScrollView>
+  );
 };
 
 const styles = StyleSheet.create({
