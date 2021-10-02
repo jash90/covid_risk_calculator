@@ -3,7 +3,7 @@ import {ScrollView, StyleSheet, Text} from 'react-native';
 
 const InformationScreen = () => {
   return (
-    <ScrollView style={{padding: 16}}>
+    <ScrollView contentContainerStyle={{padding: 16}}>
       <Text style={styles.title}>
         {`Podstawowe informacje o ochronie przeciw
         \nwirusowi SARS-CoV-2
