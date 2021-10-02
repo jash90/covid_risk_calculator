@@ -1,9 +1,9 @@
 import React from 'react';
-import {StyleSheet, Text, ScrollView} from 'react-native';
+import {ScrollView, StyleSheet, Text} from 'react-native';
 
 const InformationScreen = () => {
   return (
-    <ScrollView>
+    <ScrollView style={{padding: 16}}>
       <Text style={styles.title}>
         {`Podstawowe informacje o ochronie przeciw
         \nwirusowi SARS-CoV-2

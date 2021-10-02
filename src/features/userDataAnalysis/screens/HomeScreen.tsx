@@ -1,29 +1,18 @@
-import React, {useState} from 'react';
-import {View, Switch, StyleSheet, Text, Alert, Button, ScrollView, useColorScheme, TextComponent} from "react-native";
-import {useNavigation} from "@react-navigation/native";
+import React from 'react';
+import {Button, ScrollView, StyleSheet} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 const HomeScreen = () => {
-  const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled(previouesState => !previouesState);
   const navigation = useNavigation();
-  const navigateToInformation =()=> {
+  const navigateToInformation = () => {
     // @ts-ignore
     navigation.navigate('Information');
-  }
+  };
   return (
-
-
     <ScrollView contentContainerStyle={styles.container}>
-
-    <View>
-
-    </View>
-
-      <Button  title={"nav"} onPress={
-        navigateToInformation
-      } />
-
-    </ScrollView>)
+      <Button title={'nav'} onPress={navigateToInformation} />
+    </ScrollView>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -44,9 +33,9 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   container: {
-    flex:1,
-    alignItems: "center",
-    justifyContent: "center"
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   separator: {
     marginVertical: 8,
@@ -54,12 +43,11 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   title: {
-    flex:1,
+    flex: 1,
     textAlign: 'left',
     marginVertical: 8,
-    marginLeft:16,
-    alignItems:'flex-end',
-
+    marginLeft: 16,
+    alignItems: 'flex-end',
   },
   title_2: {
     flex: 1,
@@ -70,19 +58,19 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  footer:{
+  footer: {
     textAlign: 'center',
     alignItems: 'flex-end',
-    flex:1,
+    flex: 1,
   },
   button_Home: {
-    borderRadius:12,
+    borderRadius: 12,
     backgroundColor: 'black',
-    alignItems:'center',
+    alignItems: 'center',
   },
-  container_1:{
-    flex:1,
-    padding:20,
+  container_1: {
+    flex: 1,
+    padding: 20,
   },
 });
 
