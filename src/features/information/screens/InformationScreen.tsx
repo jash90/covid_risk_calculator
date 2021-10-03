@@ -7,14 +7,14 @@ const InformationScreen = () => {
       <Text style={styles.title}>
         {`Podstawowe informacje o ochronie przeciw
         \nwirusowi SARS-CoV-2
-        \n1. Aby zapobiec rozprzestrzenianiu się COVID-19:
-        \n2. Utrzymuj bezpieczną odległość od innych osób (co najmniej 1 metr), nawet jeśli nie wydają się chore.
-        \n3. Noś maskę poza domem, szczególnie w pomieszczeniach lub gdy zachowanie dystansu nie jest możliwe.
-        \n4. Staraj się przebywać w otwartych, dobrze wentylowanych pomieszczeniach, unikaj zamkniętych przestrzeni. Gdy jesteś w pomieszczeniu, otwórz okno.
-        \n5. Często myj ręce. Używaj wody z mydłem lub środka dezynfekującego na bazie alkoholu.
-        \n6. Zaszczep się, gdy tylko będziesz mieć taką możliwość. Postępuj zgodnie z lokalnymi wytycznymi dotyczącymi szczepień.
-        \n7. Gdy kaszlesz lub kichasz, zakrywaj nos i usta wewnętrzną stroną łokcia lub chusteczką.
-        \n8. Jeśli źle się czujesz, zostań w domu.`}
+        \n1. Wear a mask.
+        \n2. Stay 6 feet away from others.
+        \n3. Avoid crowds and poorly ventilated spaces.
+        \n4. Wash your hands often.
+        \n5. Cover coughs and sneezes.
+        \n6. Monitor your health daily and be alert for symptoms.
+        \n7. Clean high touch surfaces daily.
+        \n8. Get Vaccinated`}
       </Text>
     </ScrollView>
   );
